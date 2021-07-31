@@ -1,12 +1,12 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@300&&display=swap");
 
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: #ee3322;
+  --first-color: #AB2435;
   --first-color-alt: #048654;
   --title-color: #393939;
   --text-color: #707070;
@@ -113,7 +113,8 @@ img{
   z-index: 1;
   position: fixed;
   width: 50px;
-  margin-top: 280px;
+  top: 50%;
+  left: 0;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .4);
 }
 .sosmed li{
@@ -177,7 +178,7 @@ img{
 .card-menu {
   margin: 10px 0;
   width: 300px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   padding-bottom: 20px;
@@ -193,12 +194,12 @@ img{
 
 .header-card {
   width: 100%;
-  height: 30px;
+  height: 40px;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(233, 52, 32);
+  background-color: #AB2435;
 }
 
 .header-card p{
@@ -211,7 +212,7 @@ img{
 }
 
 .content-card img {
-  margin: 10px 0;
+  border-radius: 0px 0px 20px 20px ;
 
 }
 
@@ -232,7 +233,7 @@ img{
   align-items: center;
   margin: auto;
   width: 60%;
-  background-color: rgb(228, 59, 40);
+  background-color: #AB2435;
   color: white;
   padding: 7px 20px;
   border-radius: 15px;
@@ -255,9 +256,9 @@ img{
   color: salmon;
 }
 
-.content-card .reco{
+.header-card .reco{
   font-style: italic;
-  color: rgb(192, 192, 15);
+  color: #ecec02;
 }
 
 .service p {
@@ -265,6 +266,9 @@ img{
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
 }
+
+
+
 /* modal subscribe */
 .container__modal__subscribe{
   background-color: rgba(0, 0, 0, 0.6);
@@ -281,7 +285,7 @@ img{
   top: 50%;
   left: 50%;
   color: white;
-  background-color: rgba(255,107,107,1);
+  background-color: #AB2435;
   width: 500px;
   height: 500px;
   max-width: 100%;
@@ -320,7 +324,7 @@ input[type=text]{
   padding: 10px;
   outline: none;
   border: 3px solid white;
-  background-color: rgba(255,107,107,1);
+  background-color: #AB2435;
   color: white;
  
 }
@@ -333,11 +337,11 @@ input[type=text]{
   border: 3px teal solid;
   border-radius: 15px;
   background-color: rgb(255, 255, 255);
-  color: rgb(230, 53, 53);
+  color: #AB2435;
   text-transform: uppercase;
 }
 .btn__subscribe:hover{
-  background-color: rgb(250, 79, 79);
+  background-color: #AB2435;
   color: white;
   transition: .5s;
 }
@@ -379,6 +383,9 @@ width: 400px;
 height: 100px;
 margin: auto;
 }
+
+
+
 /*========== CLASS CSS ==========*/
 .section{
   padding: 4rem 0 2rem;
@@ -455,6 +462,76 @@ margin: auto;
     border-radius: 0 0 1rem 1rem;
     z-index: var(--z-fixed);
   }
+    /* Modal Banner */
+.container__modal__banner{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;  
+  transition: 0.5s ease-in-out;
+}
+.container__modal__banner.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal__banner{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: white;
+  background-color: #AB2435;
+  width: 100%;
+  height: 55%;
+  max-width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: translate(-50%,-50%);
+  transition: all  ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.content__banner{
+  padding: 10px;
+  text-align: center;
+  
+}
+.header__banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.header__banner h2{
+  margin-left: 5px;
+  color: rgb(236, 236, 236);
+  font-weight: var(--font-medium);
+}
+
+.header__banner i{
+  font-size: 1.6em;
+}
+
+.btn-close-banner{
+  background: transparent;
+  border: none;
+  font-size: 2.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #e2e2e2;
+}
+.btn-close-banner:hover{
+  color: #fdf901;
+}
 }
 .nav{
   height: 5em;
@@ -556,7 +633,7 @@ margin: auto;
   
 }
 #modal-header{
-  background: rgb(202, 2, 2);
+  background: #AB2435;
   color: #fff;
   padding: 25px 30px;
   text-align: center;
@@ -642,7 +719,7 @@ nav .items .item{
 .nav-menu li{
   display: block;
   color: rgb(255, 255, 255);
-  background-color: rgb(241, 69, 69);
+  background-color: #AB2435;
   text-align: center;
   transition: 0.3s;
   border-radius: 50px;
@@ -651,8 +728,8 @@ nav .items .item{
 .nav-menu .active,
 .nav-menu li:hover{
   background: rgb(226, 226, 225);
-  color: rgb(241, 69, 69);
-  border: 2px solid rgb(241, 69, 69);
+  color: #AB2435;
+  border: 2px solid #AB2435;
 }
 
 .wrapper-menu-grid{
@@ -669,7 +746,7 @@ nav .items .item{
   text-align: center;
   border-radius: 1rem;
   position: relative;
-  background-color:  #DA291C;
+  background-color:  #AB2435;
   color: white;
   overflow: hidden;
 }
@@ -786,11 +863,13 @@ color:  #FFC72C ;
 
 .home__title{
   font-size: var(--biggest-font-size);
-  color: #dd0404;
+  color: #AB2435;
   margin-bottom: var(--mb-1);
 }
 
 .home__subtitle{
+  font-weight: 300;
+  font-family:'Roboto', sans-serif;
   font-size: var(--h2-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-4);
@@ -804,15 +883,30 @@ color:  #FFC72C ;
 /*========== BUTTONS ==========*/
 .button{
   display: inline-block;
-  background-color:#DA291C;
+  background-color:#AB2435;
   color: #ffffff;
   padding: .75rem 1rem;
   border-radius: .5rem;
   transition: .3s;
+  
+}
+.button-ig{
+  display: inline-block;
+  border: 2px solid #AB2435;
+  color: #AB2435;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  transition: .3s;
+  margin: 10px 0;
+}
+.button-ig:hover{
+  background-color: #FFC72C;
+  color: #c71c0f;
+  border: none;
 }
 .button-toko{
   display: inline-block;
-  background-color:#DA291C;
+  background-color:#AB2435;
   color: white;
   padding: .75rem 1rem;
   border-radius: .5rem;
@@ -820,7 +914,7 @@ color:  #FFC72C ;
 }
 .menu-button-menu{
   border: none;
-  background-color:#DA291C;
+  background-color:#AB2435;
   color: #ffffff;
   padding: .75rem 1rem;
   border-radius: .5rem;
@@ -832,7 +926,7 @@ color:  #FFC72C ;
 }
 .menu-button-olahan{
   border: none;
-  background-color:#DA291C;
+  background-color:#AB2435;
   color: #ffffff;
   padding: .75rem 1rem;
   border-radius: .5rem;
@@ -840,16 +934,16 @@ color:  #FFC72C ;
 }
 .menu-button-olahan:hover{
   background-color: #FFC72C;
-  color: #c71c0f;
+  color: #AB2435;
 }
 
 .button:hover{
   background-color: #FFC72C;
-  color: #c71c0f;   
+  color: #AB2435;   
 }
 .button-toko:hover{
   background-color: #FFC72C;
-  color: #c71c0f;
+  color: #AB2435;
 }
 
 /*========== ABOUT ==========*/
@@ -858,6 +952,8 @@ color:  #FFC72C ;
 }
 
 .about__description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin-bottom: var(--mb-3);
 }
 
@@ -890,14 +986,34 @@ color:  #FFC72C ;
 
 .services__title{
   font-size: var(--h3-font-size);
-  color: #dd0404;
+  color: #AB2435;
   margin-bottom: var(--mb-1);
 }
 
 .services__description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   padding: 0 1.5rem;
 }
 
+/* ===== Testi ====== */
+.testi__data{
+  text-align: center;
+}
+.wrap-testi{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.testi__stores{
+  margin-top: 10px;
+}
+.testi__description{
+  max-width: 500px;
+  
+  margin: auto;
+}
 /*========== MENU ==========*/
 .menu__container{
   grid-template-columns: repeat(2, 1fr);
@@ -956,6 +1072,8 @@ color:  #FFC72C ;
 }
 
 .app__description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin-bottom: var(--mb-5);
 }
 
@@ -979,6 +1097,8 @@ color:  #FFC72C ;
 }
 
 .contact__description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin-bottom: var(--mb-3);
 }
 
@@ -995,6 +1115,8 @@ color:  #FFC72C ;
 }
 
 .footer__description{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   display: block;
   font-size: var(--small-font-size);
   margin: .25rem 0 var(--mb-3);
@@ -1019,7 +1141,7 @@ color:  #FFC72C ;
 }
 
 .footer__link:hover{
-  color: rgb(223, 5, 5);
+  color: #AB2435;
 }
 
 .footer__copy{
@@ -1058,9 +1180,6 @@ color:  #FFC72C ;
   }
   .contact__button{
     justify-self: center;
-  }
-  .sosmed{
-    margin-top: 730px;
   }
  
 }
@@ -1121,6 +1240,83 @@ color:  #FFC72C ;
   #modal-content{
     width: 100%;
   }
+  .sosmed{
+    top: 50%;
+    left: 0;
+   }
+
+ 
+   /* Modal Banner */
+.container__modal__banner{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+.container__modal__banner.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal__banner{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  color: white;
+  background-color: #AB2435;
+  width: 750px;
+  height: 680px;
+  max-width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: translate(-50%,-50%);
+  transition: all  ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.content__banner{
+  padding: 10px;
+  text-align: center;
+  
+}
+.header__banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.header__banner h2{
+  margin-left: 5px;
+  color: rgb(236, 236, 236);
+  font-weight: var(--font-medium);
+}
+
+.header__banner i{
+  font-size: 1.6em;
+}
+
+.btn-close-banner{
+  background: transparent;
+  border: none;
+  font-size: 2.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #e2e2e2;
+}
+.btn-close-banner:hover{
+  color: #fdf901;
+} 
+
  
 }
 
@@ -1129,17 +1325,19 @@ color:  #FFC72C ;
     margin-left: auto;
     margin-right: auto;
   }
+  
 
   .home__img{
     width: 700px;
+  }
+  .home__title{
+    line-height: 75px;
+    margin-bottom: var(--mb-3);
   }
 
   .about__container,
   .app__container{
     column-gap: 7rem;
-  }
-  .sosmed{
-    margin-top: 500px;
   }
   .btn-paket{
     width: 100%;
@@ -1153,17 +1351,11 @@ color:  #FFC72C ;
   .home__container{
     margin-top: 100px;
   }
-  .sosmed{
-    margin-top: 240px;
-  }
- 
+  
 }
 @media screen and (max-width: 250px){
   .home__container{
 margin-top: 300px;
-  }
-  .sosmed{
-    margin-top: 155px;
   }
   
 }
@@ -1185,6 +1377,7 @@ margin-top: 300px;
     margin-top: -20px;
     overflow: scroll;
   }
+
 .modal__subscribe{
   height: 480px;
 }

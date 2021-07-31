@@ -157,20 +157,38 @@ $(document).ready(function () {
     })
 })
 
+// $(document).ready(function () {
+//     function showSubscribe() {
+//         $('#container__subscribe').show()
+//         $('html body').css('overflow', 'hidden')
+//     }
+//     function hideSubscribe() {
+//         $('#container__subscribe').css('display', 'none')
+//         $('html body').css('overflow', 'unset')
+//     }
+//     setTimeout(showSubscribe, 3500)
+//     $('#close-subscribe').click(function () {
+//         hideSubscribe()
+//     })
+// })
+
+// modal banner
 $(document).ready(function () {
-    function showSubscribe() {
-        $('#container__subscribe').show()
+    function showBanner() {
+        $('.container__modal__banner').addClass('show')
         $('html body').css('overflow', 'hidden')
     }
-    function hideSubscribe() {
-        $('#container__subscribe').css('display', 'none')
+    function hideBanner() {
+        $('#container__banner').css('display', 'none')
         $('html body').css('overflow', 'unset')
     }
-    setTimeout(showSubscribe, 3500)
-    $('#close-subscribe').click(function () {
-        hideSubscribe()
+    setTimeout(showBanner, 3500)
+    $('#close-banner').click(function () {
+        hideBanner()
     })
 })
+
+
 // app script Spreadsheet
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwcgiP-InGYrNUJfEZcLxrvt4T1WTwkEiGdiYs2dYh8odbTr4zXyc73vGZ-6NyFUNNV3g/exec'
 const form = document.forms['subscribe']
