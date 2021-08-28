@@ -76,7 +76,7 @@ body.dark-theme{
   position: absolute;
   right: 1rem;
   top: 1.8rem;
-  color: var(--text-color);
+  color: rgb(219, 219, 8);
   font-size: 1rem;
   cursor: pointer;
 }
@@ -88,6 +88,7 @@ body{
   background-color: var(--body-color);
   color: var(--text-color);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,p,ul{
@@ -110,12 +111,15 @@ img{
 
 /* Sosial Media */
 .sosmed{
-  z-index: 1;
+  z-index: 100;
   position: fixed;
   width: 50px;
   top: 50%;
   left: 0;
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .4);
+}
+.service p i{
+  margin-right: 5px;
 }
 .sosmed li{
   height: 60px;
@@ -235,16 +239,19 @@ img{
   width: 60%;
   background-color: #AB2435;
   color: white;
-  padding: 7px 20px;
-  border-radius: 15px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: .5s;
 }
 .card-menu .btn-card:hover{
-  background-color: rgb(153, 33, 20);
+  background-color: rgb(193, 231, 21);
 
 }
 
 .btn-card i {
-  font-size: 1.4em;
+  font-size: 1em;
   margin-right: 5px;
 }
 
@@ -587,7 +594,7 @@ margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .3rem;
+  padding: .5rem;
   background: rgba(167, 25, 0, 0.801);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
@@ -621,7 +628,7 @@ margin: auto;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  
+  z-index: 10;
 }
 #modal-content{
   background: #efefef;
@@ -679,7 +686,7 @@ margin: auto;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  
+  z-index: 100;
 }
 
 #modal-header .close-modal-olahan{
@@ -692,7 +699,6 @@ margin: auto;
   color: #dceb08;
   cursor: pointer;
 }
-
 
 
 .nav-menu{
@@ -1030,6 +1036,25 @@ color:  #FFC72C ;
   box-shadow: 0 2px 4px rgba(3,74,40,.15);
   padding: .75rem;
  
+}
+
+.menu__content.card-see{
+justify-content: center;
+align-items: center;
+box-shadow: none;
+}
+.card-see .btn-see{
+  text-align: center;
+  background-color: var(--first-color);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: .5s ease;
+}
+.btn-see:hover{
+  background-color: #FFC72C;
+  color: var(--first-color);
+
 }
 
 

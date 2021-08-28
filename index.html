@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="assets/img/Logo.webp">
 
-    <!--========== BOX ICONS ==========-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--========== Fontawesome ICONS ==========-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
+    <!-- ==== AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,7 +20,6 @@
 
     <title>Banuatumpeng | Solusi Konsumsi Sukses</title>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="assets/alert/sweetalert2.all.min.js"></script>
 
 </head>
 
@@ -27,45 +27,45 @@
     <div class="sosmed">
         <ul>
             <li><a href="https://www.instagram.com/banuatumpeng/">
-                    <i class='bx bxl-instagram'></i><span>Instagram</span>
+                    <i class="fab fa-instagram"></i><span>Instagram</span>
                 </a></li>
             <li><a href="https://www.facebook.com/banuatumpeng/">
-                    <i class='bx bxl-facebook'></i><span>Facebook</span>
+                    <i class="fab fa-facebook-f"></i><span>Facebook</span>
                 </a></li>
             <li><a
                     href="https://wa.me/6285156253408?text=Hallo%20Kak%0ASaya%20berminat%20order%20bisa%20kirimkan%20paket%20menunya%20kak%3F">
-                    <i class='bx bxl-whatsapp'></i><span>Whatsapp</span>
+                    <i class="fab fa-whatsapp"></i><span>Whatsapp</span>
                 </a></li>
         </ul>
     </div>
     <!--========== SCROLL TOP ==========-->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
+        <i class="fas fa-chevron-up scrolltop__icon"></i>
     </a>
 
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
             <a href="#" class="nav_logo">
-                <img src="assets/img/Logo.png" alt="tumpeng banjarbaru">
+                <img src="assets/img/Logo.webp" alt="tumpeng banjarbaru">
             </a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">Paket Menu</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Paket Olahan</a></li>
                     <li class="nav__item"><a href="#services" class="nav__link">Penawaran</a></li>
                     <li class="nav__item"><a href="#menu" class="nav__link">Produk</a></li>
                     <li class="nav__item"><a href="https://tokko.io/nasikotakbjb0" class="nav__link button-toko"><i
-                                class='bx bx-cart-alt'></i>
+                                class="fas fa-shopping-cart"></i>
                             E-Commerce</a></li>
 
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    <li><i class='fas fa-moon change-theme' id="theme-button"></i></li>
                 </ul>
             </div>
 
             <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
@@ -105,11 +105,11 @@
                 </button>
                 <div class="content__banner">
                     <div class="header__banner">
-                        <i class='bx bxs-badge-check'></i>
+                        <i class="far fa-check-circle"></i>
                         <h2>Penawaran Special</h2>
                     </div>
                     <a href="https://wa.link/rrrl1t">
-                        <img src="assets/img/banner-prasmanan.png" alt="">
+                        <img src="assets/img/banner-prasmanan.webp" alt="">
                     </a>
                 </div>
             </div>
@@ -120,10 +120,12 @@
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
-                    <h1 class="home__title">Banua Tumpeng</h1>
+                    <h1 class="home__title"></h1>
                     <h2 class="home__subtitle">Dibuat oleh ahlinya untuk berbagai konsumsi acara spesial pian</h2>
-                    <a href="#" class="button" id="modal-open-menu" style="font-weight: 600;">PILIH PAKET MENU</a>
-                    <a href="https://instagram.com/banuatumpeng" class="button-ig" style="font-weight: 600;">KUNJUNGI
+                    <a href="#" class="button" id="modal-open-menu" style="font-weight: 600; border-radius: 50px;">PILIH
+                        PAKET MENU</a>
+                    <a href="https://instagram.com/banuatumpeng" class="button-ig"
+                        style="font-weight: 600; border-radius: 50px;">KUNJUNGI
                         INSTAGRAM</a>
                 </div>
 
@@ -135,7 +137,7 @@
         <section class="about section bd-container" id="about">
             <div class="about__container  bd-grid">
                 <div class="about__data">
-                    <span class="#dd0404 about__initial">PAKET MENU</span>
+                    <span class=" about__initial">PAKET OLAHAN</span>
                     <hr>
                     <h2 class="section-title about__initial">Diolah bersama dengan juru masak yang berpengalaman</h2>
                     <p class="about__description">Kita menjamin rasa yang pas dilidah, profesional dan kehigenisannya.
@@ -179,26 +181,26 @@
                                     <h2 class="price-card">Rp,17.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>Lalapan Timun + sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Mika diameter 15cm</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>Lalapan Timun + sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Mika diameter 15cm</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                         <p><i class='bx'></i></p>
 
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a
+                                    <i class='fas fa-shopping-cart'></i><a
                                         href="https://api.whatsapp.com/send?phone=6285156253408&text=Hallo%20Kak%0ASaya%20berminat%20order%20untuk%20paket%20TUMINI%201%0Abisa%20kirimkan%20form%20pemesanan%20untuk%20paket%20ini%3F">Pesan</a>
                                 </div>
 
                             </div>
                             <div class="card-menu tumini">
                                 <div class="header-card">
-                                    <h3 class="reco"><i class='bx bxs-star'></i></i>Best Seller <i
-                                            class='bx bxs-star'></i></h2>
+                                    <h3 class="reco"><i class='fas fa-star'></i></i>Best Seller <i
+                                            class='fas fa-star'></i></h2>
                                 </div>
                                 <div class="content-card">
                                     <img src="assets/img/tumini-2.webp" height="100" alt="">
@@ -207,17 +209,17 @@
                                     <h2 class="price-card">Rp,19.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>2 Menu pelengkap</p>
-                                        <p><i class='bx bx-check'></i>2 pilihan lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Mika diameter 15cm</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>2 Menu pelengkap</p>
+                                        <p><i class='fas fa-check'></i>2 pilihan lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Mika diameter 15cm</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a
+                                    <i class='fas fa-shopping-cart'></i><a
                                         href="https://api.whatsapp.com/send?phone=6285156253408&text=Hallo%20Kak%0ASaya%20berminat%20order%20untuk%20paket%20TUMINI%202%0Abisa%20kirimkan%20form%20pemesanan%20untuk%20paket%20ini%3F">Pesan</a>
                                 </div>
                             </div>
@@ -230,18 +232,18 @@
                                     <h2 class="price-card">Rp,23.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>2 Menu pelengkap</p>
-                                        <p><i class='bx bx-check'></i>2 pilihan lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Mika diameter 18cm</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>2 Menu pelengkap</p>
+                                        <p><i class='fas fa-check'></i>2 pilihan lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Mika diameter 18cm</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                         <p><i class='bx'></i></p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a
+                                    <i class='fas fa-shopping-cart'></i><a
                                         href="https://api.whatsapp.com/send?phone=6285156253408&text=Hallo%20Kak%0ASaya%20berminat%20order%20untuk%20paket%20TUMINI%203%0Abisa%20kirimkan%20form%20pemesanan%20untuk%20paket%20ini%3F">Pesan</a>
                                 </div>
                             </div>
@@ -254,18 +256,19 @@
                                     <h2 class="price-card">Rp,27.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>3 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>2 Menu pelengkap</p>
-                                        <p><i class='bx bx-check'></i>2 pilihan lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Mika diameter 20cm(skat)</p>
-                                        <p><i class='bx bx-check'></i>Sendok + tisu</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>3 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>2 Menu pelengkap</p>
+                                        <p><i class='fas fa-check'></i>2 pilihan lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Mika diameter 20cm(skat)</p>
+                                        <p><i class='fas fa-check'></i>Sendok + tisu</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                         <p><i class='bx'></i></p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a
+                                    <i class='fas fa-shopping-cart'></i>
+                                    <a
                                         href="https://api.whatsapp.com/send?phone=6285156253408&text=Hallo%20Kak%0ASaya%20berminat%20order%20untuk%20paket%20TUMINI%204%0Abisa%20kirimkan%20form%20pemesanan%20untuk%20paket%20ini%3F">Pesan</a>
                                 </div>
                             </div>
@@ -278,18 +281,18 @@
                                     <h2 class="price-card">Rp,30.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>3 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>3 Menu pelengkap</p>
-                                        <p><i class='bx bx-check'></i>2 pilihan lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Garnish Timun</p>
-                                        <p><i class='bx bx-check'></i>Mika Kotak</p>
-                                        <p><i class='bx bx-check'></i>Sendok + tisu</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>3 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>3 Menu pelengkap</p>
+                                        <p><i class='fas fa-check'></i>2 pilihan lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Garnish Timun</p>
+                                        <p><i class='fas fa-check'></i>Mika Kotak</p>
+                                        <p><i class='fas fa-check'></i>Sendok + tisu</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a
+                                    <i class='fas fa-shopping-cart'></i><a
                                         href="https://api.whatsapp.com/send?phone=6285156253408&text=Hallo%20Kak%0ASaya%20berminat%20order%20untuk%20paket%20TUMINI%205%0Abisa%20kirimkan%20form%20pemesanan%20untuk%20paket%20ini%3F">Pesan</a>
                                 </div>
                             </div>
@@ -302,24 +305,24 @@
                                     <h2 class="price-card">Rp,15.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                         <p><i class='bx'></i></p>
                                         <p><i class='bx'></i></p>
                                         <p><i class='bx'></i></p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/0ol2p5">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/0ol2p5">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu naskot">
                                 <div class="header-card">
-                                    <h3 class="reco"><i class='bx bxs-star'></i></i>Best Seller <i
-                                            class='bx bxs-star'></i></h3>
+                                    <h3 class="reco"><i class='fas fa-star'></i></i>Best Seller <i
+                                            class='fas fa-star'></i></h3>
                                 </div>
                                 <div class="content-card">
 
@@ -328,17 +331,17 @@
                                     <h2 class="price-card">Rp,18.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>1 Menu pelengkap</p>
-                                        <p><i class='bx bx-check'></i>1 Menu Tambahan</p>
-                                        <p><i class='bx bx-check'></i>lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>1 Menu pelengkap</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Tambahan</p>
+                                        <p><i class='fas fa-check'></i>lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/uwa2jm">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/uwa2jm">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu naskot">
@@ -350,18 +353,18 @@
                                     <h2 class="price-card">Rp,21.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>1 Menu pelengkap</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Tambahan</p>
-                                        <p><i class='bx bx-check'></i>2 lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>1 Menu pelengkap</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Tambahan</p>
+                                        <p><i class='fas fa-check'></i>2 lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                         <p><i class='bx'></i></p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/98slxi">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/98slxi">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu naskot">
@@ -373,24 +376,24 @@
                                     <h2 class="price-card">Rp,25.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>Ada Pilihan Nasi</p>
-                                        <p><i class='bx bx-check'></i>1 Menu Utama + Telur</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>2 Menu pelengkap</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Tambahan</p>
-                                        <p><i class='bx bx-check'></i>2 lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok + tisu</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>Ada Pilihan Nasi</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama + Telur</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>2 Menu pelengkap</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Tambahan</p>
+                                        <p><i class='fas fa-check'></i>2 lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok + tisu</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/fkd3uc">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/fkd3uc">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu tumpeng">
                                 <div class="header-card">
-                                    <h3 class="reco"><i class='bx bxs-star'></i></i>Best Seller <i
-                                            class='bx bxs-star'></i></h2>
+                                    <h3 class="reco"><i class='fas fa-star'></i></i>Best Seller <i
+                                            class='fas fa-star'></i></h2>
                                 </div>
                                 <div class="content-card">
 
@@ -399,17 +402,17 @@
                                     <h2 class="price-card">Rp,300.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>5 Potong Olahan Ayam</p>
-                                        <p><i class='bx bx-check'></i>3 Olahan Sayur</p>
-                                        <p><i class='bx bx-check'></i>5 Perkedel Kentang</p>
-                                        <p><i class='bx bx-check'></i>5 Telur</p>
-                                        <p><i class='bx bx-check'></i>Sambal</p>
-                                        <p><i class='bx bx-check'></i>Special Garnish</p>
-                                        <p><i class='bx bx-check'></i>Kartu Ucapan</p>
+                                        <p><i class='fas fa-check'></i>5 Potong Olahan Ayam</p>
+                                        <p><i class='fas fa-check'></i>3 Olahan Sayur</p>
+                                        <p><i class='fas fa-check'></i>5 Perkedel Kentang</p>
+                                        <p><i class='fas fa-check'></i>5 Telur</p>
+                                        <p><i class='fas fa-check'></i>Sambal</p>
+                                        <p><i class='fas fa-check'></i>Special Garnish</p>
+                                        <p><i class='fas fa-check'></i>Kartu Ucapan</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/1onvph">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/1onvph">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu tumpeng">
@@ -421,18 +424,18 @@
                                     <h2 class="price-card">Rp,400.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>7 Potong Olahan Ayam</p>
-                                        <p><i class='bx bx-check'></i>3 Olahan Sayur</p>
-                                        <p><i class='bx bx-check'></i>7 Perkedel Kentang</p>
-                                        <p><i class='bx bx-check'></i>7 Ampal Jagung</p>
-                                        <p><i class='bx bx-check'></i>7 Telur</p>
-                                        <p><i class='bx bx-check'></i>Sambal</p>
-                                        <p><i class='bx bx-check'></i>Special Garnish</p>
-                                        <p><i class='bx bx-check'></i>Kartu Ucapan</p>
+                                        <p><i class='fas fa-check'></i>7 Potong Olahan Ayam</p>
+                                        <p><i class='fas fa-check'></i>3 Olahan Sayur</p>
+                                        <p><i class='fas fa-check'></i>7 Perkedel Kentang</p>
+                                        <p><i class='fas fa-check'></i>7 Ampal Jagung</p>
+                                        <p><i class='fas fa-check'></i>7 Telur</p>
+                                        <p><i class='fas fa-check'></i>Sambal</p>
+                                        <p><i class='fas fa-check'></i>Special Garnish</p>
+                                        <p><i class='fas fa-check'></i>Kartu Ucapan</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/cxsk6o">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/cxsk6o">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu tumpeng">
@@ -444,18 +447,18 @@
                                     <h2 class="price-card">Rp,600.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>10 Potong Olahan Ayam</p>
-                                        <p><i class='bx bx-check'></i>4 Olahan Sayur</p>
-                                        <p><i class='bx bx-check'></i>10 Perkedel Kentang</p>
-                                        <p><i class='bx bx-check'></i>10 Ampal Jagung</p>
-                                        <p><i class='bx bx-check'></i>10 Telur</p>
-                                        <p><i class='bx bx-check'></i>Sambal</p>
-                                        <p><i class='bx bx-check'></i>Special Garnish</p>
-                                        <p><i class='bx bx-check'></i>Kartu Ucapan</p>
+                                        <p><i class='fas fa-check'></i>10 Potong Olahan Ayam</p>
+                                        <p><i class='fas fa-check'></i>4 Olahan Sayur</p>
+                                        <p><i class='fas fa-check'></i>10 Perkedel Kentang</p>
+                                        <p><i class='fas fa-check'></i>10 Ampal Jagung</p>
+                                        <p><i class='fas fa-check'></i>10 Telur</p>
+                                        <p><i class='fas fa-check'></i>Sambal</p>
+                                        <p><i class='fas fa-check'></i>Special Garnish</p>
+                                        <p><i class='fas fa-check'></i>Kartu Ucapan</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/5gzkao">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/5gzkao">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu tumpeng">
@@ -467,18 +470,18 @@
                                     <h2 class="price-card">Rp,750.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>15 Potong Olahan Ayam</p>
-                                        <p><i class='bx bx-check'></i>4 Olahan Sayur</p>
-                                        <p><i class='bx bx-check'></i>15 Perkedel Kentang</p>
-                                        <p><i class='bx bx-check'></i>15 Ampal Jagung</p>
-                                        <p><i class='bx bx-check'></i>15 Telur</p>
-                                        <p><i class='bx bx-check'></i>Sambal</p>
-                                        <p><i class='bx bx-check'></i>Special Garnish</p>
-                                        <p><i class='bx bx-check'></i>Kartu Ucapan</p>
+                                        <p><i class='fas fa-check'></i>15 Potong Olahan Ayam</p>
+                                        <p><i class='fas fa-check'></i>4 Olahan Sayur</p>
+                                        <p><i class='fas fa-check'></i>15 Perkedel Kentang</p>
+                                        <p><i class='fas fa-check'></i>15 Ampal Jagung</p>
+                                        <p><i class='fas fa-check'></i>15 Telur</p>
+                                        <p><i class='fas fa-check'></i>Sambal</p>
+                                        <p><i class='fas fa-check'></i>Special Garnish</p>
+                                        <p><i class='fas fa-check'></i>Kartu Ucapan</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/gpw0bq">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/gpw0bq">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu bento">
@@ -490,24 +493,24 @@
                                     <h2 class="price-card">Rp,16.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>Lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>Lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                         <p><i class='bx'></i></p>
                                         <p><i class='bx'></i></p>
                                         <p><i class='bx'></i></p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/0rn9vq">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/0rn9vq">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu bento">
                                 <div class="header-card">
-                                    <h3 class="reco"><i class='bx bxs-star'></i></i>Best Seller <i
-                                            class='bx bxs-star'></i></h3>
+                                    <h3 class="reco"><i class='fas fa-star'></i></i>Best Seller <i
+                                            class='fas fa-star'></i></h3>
                                 </div>
                                 <div class="content-card">
 
@@ -516,17 +519,17 @@
                                     <h2 class="price-card">Rp,18.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>Ada pilihan nasi</p>
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>1 Menu Pelengkap</p>
-                                        <p><i class='bx bx-check'></i>Lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>Ada pilihan nasi</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Pelengkap</p>
+                                        <p><i class='fas fa-check'></i>Lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/4kuayc">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/4kuayc">Pesan</a>
                                 </div>
                             </div>
                             <div class="card-menu bento">
@@ -538,18 +541,18 @@
                                     <h2 class="price-card">Rp,20.000,-</h2>
                                     <hr>
                                     <div class="service">
-                                        <p><i class='bx bx-check'></i>Ada pilihan nasi</p>
-                                        <p><i class='bx bx-check'></i>1 Menu Utama</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pendamping</p>
-                                        <p><i class='bx bx-check'></i>2 Menu Pelengkap</p>
-                                        <p><i class='bx bx-check'></i>2 Lalapan + Sambal</p>
-                                        <p><i class='bx bx-check'></i>Sendok</p>
-                                        <p><i class='bx bx-check'></i>Stiker Acara</p>
+                                        <p><i class='fas fa-check'></i>Ada pilihan nasi</p>
+                                        <p><i class='fas fa-check'></i>1 Menu Utama</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pendamping</p>
+                                        <p><i class='fas fa-check'></i>2 Menu Pelengkap</p>
+                                        <p><i class='fas fa-check'></i>2 Lalapan + Sambal</p>
+                                        <p><i class='fas fa-check'></i>Sendok</p>
+                                        <p><i class='fas fa-check'></i>Stiker Acara</p>
                                         <p><i class='bx'></i></p>
                                     </div>
                                 </div>
                                 <div class="btn-card">
-                                    <i class='bx bx-cart-alt'></i><a href="https://wa.link/xxcqvv">Pesan</a>
+                                    <i class='fas fa-shopping-cart'></i><a href="https://wa.link/xxcqvv">Pesan</a>
                                 </div>
                             </div>
                         </div>
@@ -908,18 +911,22 @@
 
         <!--========== SERVICES ==========-->
         <section class="services section bd-container" id="services">
-            <span class="section-subtitle">PENAWARAN KAMI</span>
-            <h2 class="section-title">Apa yang akan anda dapat jika order disini?</h2>
+            <div class="title-service">
+                <span class="section-subtitle service">PENAWARAN KAMI</span>
+                <h2 class="section-title service">Apa yang
+                    akan anda dapat jika order disini?</h2>
+            </div>
+
 
             <div class="services__container  bd-grid">
-                <div class="services__content">
+                <div class="services__content satu">
                     <img class="services__img  " src="assets/img/respon.svg" alt="tumpeng banjarbaru">
                     <h3 class="services__title">The Best Services</h3>
                     <p class="services__description">Kami menawarkan klien kami layanan berkualitas tinggi selama
                         bertahun-tahun, dengan makanan terbaik dan lezat di kota.</p>
                 </div>
 
-                <div class="services__content">
+                <div class="services__content dua">
                     <img class="services__img" src="assets/img/event.svg" alt="tumpeng banjarmasin">
                     <h3 class="services__title">Event Support</h3>
                     <p class="services__description">Kami akan membantu Menyukseskan acara anda melalui support yang
@@ -927,7 +934,7 @@
                         yaitu kemasan cantik sesuai tema acara yang berlangsung. </p>
                 </div>
 
-                <div class="services__content">
+                <div class="services__content tiga">
                     <img class="services__img" src="assets/img/deli.svg" alt="tumpeng banjarbaru">
                     <h3 class="services__title">Full Delivery</h3>
                     <p class="services__description">Kami juga memberikan pelayanan full online (Optional) mulai dari
@@ -939,7 +946,8 @@
         <!--========== MENU ==========-->
         <section class="menu section bd-container" id="menu">
             <span class="section-subtitle">Special</span>
-            <h2 class="section-title">Beberapa Produk Kami Made by Order </h2>
+            <h2 class="section-title">Beberapa Produk Kami Made by
+                Order </h2>
 
             <div class="menu__container bd-grid">
                 <div class="menu__content">
@@ -947,8 +955,8 @@
                     <h3 class="menu__name">TUMINI</h3>
                     <span class="menu__detail">Nasi Kuning <br> + Serondeng</span>
                     <span class="menu__preci">Mulai dari <br>Rp 17.000</span>
-                    <button class="button menu__button" onclick="window.location.href='https://wasap.at/kC3PbY'"><i
-                            class='bx bx-cart-alt'></i></button>
+                    <button class="button menu__button" onclick="window.location.href='https://wasap.at/kC3PbY' "><i
+                            class='fas fa-shopping-cart'></i></button>
                 </div>
 
                 <div class="menu__content">
@@ -956,7 +964,8 @@
                     <h3 class="menu__name">Tumpeng Besar</h3>
                     <span class="menu__detail">Untuk Beberapa Porsi</span>
                     <span class="menu__preci">Mulai dari <br>Rp 350.000</span>
-                    <a href="https://wasap.at/ofzhgd" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    <a href="https://wasap.at/ofzhgd" class="button menu__button"><i
+                            class='fas fa-shopping-cart'></i></a>
                 </div>
 
                 <div class="menu__content">
@@ -964,14 +973,28 @@
                     <h3 class="menu__name">TUMINI</h3>
                     <span class="menu__detail">Nasi Uduk <br>+ Ayam Bakar</span>
                     <span class="menu__preci">Mulai dari <br>Rp 17.000</span>
-                    <a href="https://wasap.at/Efpgjb" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    <a href="https://wasap.at/Efpgjb" class="button menu__button"><i
+                            class='fas fa-shopping-cart'></i></a>
                 </div>
                 <div class="menu__content">
                     <img src="assets/img/tumini-4.svg" alt="tumpeng banjarmasin" class="menu__img">
                     <h3 class="menu__name">TUMINI</h3>
-                    <span class="menu__detail">Nasi Uduk <br>+ Serondeng(Kemasan Skat)</span>
+                    <span class="menu__detail">Nasi Uduk <br>+ Serondeng</span>
                     <span class="menu__preci">Mulai dari <br>Rp 27.000</span>
-                    <a href="https://wasap.at/Du4xph" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    <a href="https://wasap.at/Du4xph" class="button menu__button"><i
+                            class='fas fa-shopping-cart'></i></a>
+                </div>
+                <div class="menu__content">
+                    <img src="assets/img/naskot.webp" alt="tumpeng banjarmasin" class="menu__img">
+                    <h3 class="menu__name">NASI KOTAK</h3>
+                    <span class="menu__detail">Nasi Uduk <br>+ Serondeng</span>
+                    <span class="menu__preci">Mulai dari <br>Rp 15.000</span>
+                    <a href="https://wasap.at/Du4xph" class="button menu__button"><i
+                            class='fas fa-shopping-cart'></i></a>
+                </div>
+                <div class="menu__content card-see">
+
+                    <a href="#menu" id="modal-open-menu2" class="btn-see">Lihat Produk Lainnya</a>
                 </div>
             </div>
         </section>
@@ -991,9 +1014,9 @@
                 </div>
 
                 <div class="wrap-testi">
-                    <img src="assets/img/test1.webp" width="300" alt="">
-                    <img src="assets/img/test2.webp" width="300" alt="">
-                    <img src="assets/img/test3.webp" width="300" alt="">
+                    <img src="assets/img/test1.webp" class="testi1" width="300" alt="">
+                    <img src="assets/img/test2.webp" class="testi2" width="300" alt="">
+                    <img src="assets/img/test3.webp" class="testi3" width="300" alt="">
                 </div>
 
 
@@ -1042,11 +1065,11 @@
                 <span class="footer__description">CATERING</span>
                 <div>
                     <a href="https://www.facebook.com/nasikotakbjb" class="footer__social"><i
-                            class='bx bxl-facebook'></i></a>
+                            class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/banuatumpeng/" class="footer__social"><i
-                            class='bx bxl-instagram'></i></a>
+                            class="fab fa-instagram"></i></a>
                     <a href="https://wa.me/6285156253408?text=Hallo%20Kak%0ASaya%20berminat%20order%20bisa%20kirimkan%20paket%20menunya%20kak%3F"
-                        class="footer__social"><i class='bx bxl-whatsapp'></i></a>
+                        class="footer__social"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
 
@@ -1084,8 +1107,101 @@
         <p class="footer__copy">&#169; 2021 Banuatumpeng.com | All right reserved</p>
     </footer>
 
-    <!--========== SCROLL REVEAL ==========-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ==== GSAP JS ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script>
+
+        gsap.from(".home__img", { duration: 1, scale: 0, ease: "circ.out" });
+        gsap.to(".home__title", { duration: 2, delay: 1.2, text: "Banua Tumpeng" });
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.from(".about__data", {
+            scrollTrigger: {
+                trigger: ".about__data",
+                toggleActions: "restart none none none"
+            },
+            duration: 3,
+            opacity: 0,
+            y: -100,
+            ease: "expo",
+
+        });
+        gsap.from(".title-service", {
+            scrollTrigger: {
+                trigger: ".title-service",
+                toggleActions: "restart none none none"
+            },
+            duration: 2,
+            opacity: 0,
+            y: 60,
+            ease: "expo",
+
+        });
+        gsap.from(".dua", {
+            scrollTrigger: {
+                trigger: ".dua",
+                toggleActions: "restart none none none"
+            },
+            duration: 2,
+            delay: .5,
+            opacity: 0,
+            y: -60,
+            ease: "expo",
+
+        });
+        gsap.from(".tiga", {
+            scrollTrigger: {
+                trigger: ".tiga",
+                toggleActions: "restart none none none"
+            },
+            duration: 2,
+            delay: .5,
+            opacity: 0,
+            y: -60,
+            ease: "expo",
+
+        });
+        gsap.from(".testi1", {
+            scrollTrigger: {
+                trigger: ".testi1",
+                toggleActions: "restart none none none"
+            },
+            duration: 2,
+            delay: .5,
+            opacity: 0,
+            y: -60,
+            ease: "expo",
+
+        });
+        gsap.from(".testi2", {
+            scrollTrigger: {
+                trigger: ".testi2",
+                toggleActions: "restart none none none"
+            },
+            duration: 2,
+            delay: 1,
+            opacity: 0,
+            y: -60,
+            ease: "expo",
+
+        });
+        gsap.from(".testi3", {
+            scrollTrigger: {
+                trigger: ".testi3",
+                toggleActions: "restart none none none"
+            },
+            duration: 2,
+            delay: 1.5,
+            opacity: 0,
+            y: -60,
+            ease: "expo",
+
+        });
+        gsap.registerPlugin(TextPlugin);
+
+    </script>
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>

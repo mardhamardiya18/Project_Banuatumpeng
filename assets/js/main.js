@@ -62,7 +62,7 @@ window.addEventListener('scroll', scrollTop)
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
-const iconTheme = 'bx-sun'
+const iconTheme = 'fa-sun'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -70,13 +70,13 @@ const selectedIcon = localStorage.getItem('selected-icon')
 
 // We obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
     // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
+    themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -89,29 +89,17 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 2000,
-    reset: true
-});
-
-sr.reveal(`.home__data, .home__img,
-            .about__data, .about__img,
-            .services__content, .menu__content,
-            .app__data, .app__img,
-            .contact__data, .contact__button,
-            .footer__content`, {
-    interval: 200
-})
 
 // modal menu
 let modal = document.getElementById('contact-modal'),
     openModal = document.getElementById('modal-open-menu'),
+    openModal2 = document.getElementById('modal-open-menu2'),
     closeModal = document.querySelector('.close-modal');
 
 openModal.addEventListener('click', function () {
+    modal.style.display = 'block';
+})
+openModal2.addEventListener('click', function () {
     modal.style.display = 'block';
 })
 closeModal.addEventListener('click', function () {
@@ -182,32 +170,32 @@ $(document).ready(function () {
         $('#container__banner').css('display', 'none')
         $('html body').css('overflow', 'unset')
     }
-    setTimeout(showBanner, 3500)
+    setTimeout(showBanner, 5000)
     $('#close-banner').click(function () {
         hideBanner()
     })
 })
 
 
-// app script Spreadsheet
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwcgiP-InGYrNUJfEZcLxrvt4T1WTwkEiGdiYs2dYh8odbTr4zXyc73vGZ-6NyFUNNV3g/exec'
-const form = document.forms['subscribe']
-const done = document.querySelector('.clicked-subscribe')
-const btnSent = document.querySelector('.btn__subscribe-done')
-const btnSend = document.querySelector('.btn__subscribe')
+// // app script Spreadsheet
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbwcgiP-InGYrNUJfEZcLxrvt4T1WTwkEiGdiYs2dYh8odbTr4zXyc73vGZ-6NyFUNNV3g/exec'
+// const form = document.forms['subscribe']
+// const done = document.querySelector('.clicked-subscribe')
+// const btnSent = document.querySelector('.btn__subscribe-done')
+// const btnSend = document.querySelector('.btn__subscribe')
 
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    btnSend.classList.toggle('d-none')
-    btnSent.classList.toggle('d-none')
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            done.classList.toggle('d-none')
-            form.classList.toggle('d-none')
-            form.reset()
-            console.log('Success!', response)
-        })
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     btnSend.classList.toggle('d-none')
+//     btnSent.classList.toggle('d-none')
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//         .then(response => {
+//             done.classList.toggle('d-none')
+//             form.classList.toggle('d-none')
+//             form.reset()
+//             console.log('Success!', response)
+//         })
 
-        .catch(error => console.error('Error!', error.message))
-})
+//         .catch(error => console.error('Error!', error.message))
+// })
