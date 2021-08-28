@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@300&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300&&display=swap");
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -579,6 +579,7 @@ margin: auto;
 /* Active menu */
 .active-link{
   color: var(--first-color);
+  font-weight: 700;
 }
 
 /* Change background header */
@@ -884,6 +885,15 @@ color:  #FFC72C ;
 .home__img{
   width: 330px;
   justify-self: center;
+  animation: tumpeng 5s linear infinite;
+}
+@keyframes tumpeng {
+  0%,100%{
+    transform: translateY(0%);
+  }
+  50%{
+    transform: translateY(-5%);
+  }
 }
 
 /*========== BUTTONS ==========*/
@@ -967,6 +977,7 @@ color:  #FFC72C ;
   width: 280px;
   border-radius: .5rem;
   justify-self: center;
+  animation: tumpeng 3s linear infinite;
 }
 
 /*========== SERVICES ==========*/
@@ -1050,6 +1061,15 @@ box-shadow: none;
   padding: 20px;
   border-radius: 10px;
   transition: .5s ease;
+  animation: lainnya 3s linear infinite;
+}
+@keyframes lainnya {
+  0%,100%{
+    transform: scale(0.99);
+  }
+  50%{
+    transform: scale(1.08);
+  }
 }
 .btn-see:hover{
   background-color: #FFC72C;
